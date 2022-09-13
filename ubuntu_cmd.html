@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Ubuntu Command</title>
+  </head>
+  <body class="container">
+    
+    <ul>
+        <li>
+            For Windows system -> Download vertual machine s/w for windows.
+        </li>
+        <li>
+            Download Ubuntu. Then setup in vertual machine.
+        </li>
+        <li>
+            F11 for full mode commad prompt shortcut key & Tab during command type used for auto complete.
+        </li>
+    </ul>
+    <table class="table table-sm">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Command</th>
+            <th scope="col">Example</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>switch User (go to root user / Super user)</td>
+            <td>sudo -s</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>uname -a (get the current version, kernel version,  host details etc)</td>
+            <td>uname -r </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>ls -l  /etc/*release (get the release infomation)</td>
+            <td>ls -l  /etc/*release</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>cat /proc/cpuinfo (get cpu, processor related infomation)</td>
+            <td>lscpu</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>free -h (get the free disk size infomation)</td>
+            <td>df -h</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>sudo du -hd1 (get disk size infomation one next lavel)</td>
+            <td>sudo du -hd1</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>ip a (get IP infomation)</td>
+            <td>ip a</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>sudo apt update (for Update)</td>
+            <td>sudo apt update</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>sudo apt install tree (install tree)</td>
+            <td>sudo apt install tree</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>sudo apt upgrade (for upgrade)</td>
+            <td>sudo apt upgrade</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>tree (get details about tree command)</td>
+            <td>man tree</td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>ls (listing)</td>
+            <td>ls, ls -a, ls -l, ls -lh, ls -ahl</td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>man (manual)</td>
+            <td>man ls</td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>clear (clear the screen)</td>
+            <td>clear</td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td>--help (help)</td>
+            <td>ls --help</td>
+          </tr>
+          <tr>
+            <th scope="row">16</th>
+            <td>apropos (find the list related command)</td>
+            <td>apropos "list"</td>
+          </tr>
+          <tr>
+            <th scope="row">17</th>
+            <td>nano filename(open in nano editor)</td>
+            <td>ctrl+c (stop execution), ctrl+O(for save), ctrl+A,(start line), ctrl+E(end line)</td>
+          </tr>
+          <tr>
+            <th scope="row">18</th>
+            <td>nano filename(open in nano editor)</td>
+            <td>ctrl+leftarrow(move one word), ctrl+rightarow, ctrl+shift+c, ctrl+shift+v(for paste)</td>
+          </tr>
+          <tr>
+            <th scope="row">19</th>
+            <td>Recall previous command</td>
+            <td>up arrow & down arrow</td>
+          </tr>
+          <tr>
+            <th scope="row">20</th>
+            <td>status of the file/directory</td>
+            <td>stat filename</td>
+          </tr>
+          <tr>
+            <th scope="row">21</th>
+            <td>change directory</td>
+            <td>cd /www/Dept\ Files</td>
+          </tr>
+          <tr>
+            <th scope="row">22</th>
+            <td>print working directory</td>
+            <td>pwd</td>
+          </tr>
+          <tr>
+            <th scope="row">23</th>
+            <td>create directory</td>
+            <td>mkdir newdir</td>
+          </tr>
+          <tr>
+            <th scope="row">24</th>
+            <td>copy files</td>
+            <td>cp filename.txt filename1.txt, cp filename.txt www/Dept/</td>
+          </tr>
+          <tr>
+            <th scope="row">25</th>
+            <td>move files</td>
+            <td>mv filename1.txt www/Dept/, mv filename1.txt filename2.txt, mv *.txt www/Dept/, mv www/Dept/* .</td>
+          </tr>
+          <tr>
+            <th scope="row">26</th>
+            <td>delete file/directory</td>
+            <td>rm filename.txt, rm filename?.txt, rm -r www/Dept/</td>
+          </tr>
+          <tr>
+            <th scope="row">27</th>
+            <td>find command</td>
+            <td>find . -name "file*", find . -name "*ile*", find ~/www/Dept -name "fi*"</td>
+          </tr>
+          <tr>
+            <th scope="row">28</th>
+            <td>exit</td>
+            <td>exit</td>
+          </tr>
+          <tr>
+            <th scope="row">29</th>
+            <td>Change permission</td>
+            <td>chmod 777 text.txt, chmod a+w text.txt, chmod o=w text.txt, chmod g-w text.txt, chmod u+w text.txt</td>
+          </tr>
+          <tr>
+            <th scope="row">30</th>
+            <td>Change Ownership</td>
+            <td>sudo chown scott text.txt</td>
+          </tr>
+          <tr>
+            <th scope="row">31</th>
+            <td>Change Group</td>
+            <td>chgrp</td>
+          </tr>
+          <tr>
+            <th scope="row">32</th>
+            <td>Echo & Word Count</td>
+            <td>echo "hello"|wc</td>
+          </tr>
+          <tr>
+            <th scope="row">33</th>
+            <td>concat</td>
+            <td>cat file1.txt</td>
+          </tr>
+          <tr>
+            <th scope="row">34</th>
+            <td>head</td>
+            <td>head -n5 file1.txt</td>
+          </tr>
+          <tr>
+            <th scope="row">35</th>
+            <td>tail</td>
+            <td>tail -n4 file1.txt, cat file1.txt | cat -n | tail -n5</td>
+          </tr>
+          <tr>
+            <th scope="row">36</th>
+            <td>vi editor</td>
+            <td>vi file.txt (:q, :wq, esc, B, W, spacebar, :!q, i)</td>
+          </tr>
+          <tr>
+            <th scope="row">37</th>
+            <td>less</td>
+            <td>less file.txt</td>
+          </tr>
+          <tr>
+            <th scope="row">38</th>
+            <td>grep (search)</td>
+            <td>grep "the" file.txt, grep -n "the" file.txt, grep -E "[lkj]" file.txt, grep -E "\w{3,}" file.txt</td>
+          </tr>
+          <tr>
+            <th scope="row">39</th>
+            <td>awk (print first column)</td>
+            <td>awk '{print $1}' simple.txt</td>
+          </tr>
+          <tr>
+            <th scope="row">40</th>
+            <td>sed (replace)</td>
+            <td>sed s/OX/COW simple.txt</td>
+          </tr>
+          <tr>
+            <th scope="row">41</th>
+            <td>sed (replace)</td>
+            <td>sed s/OX/COW simple.txt</td>
+          </tr>
+          <tr>
+            <th scope="row">42</th>
+            <td>sort</td>
+            <td>sort simple.txt, sort -k2 n simple.txt, sort -u simple.txt</td>
+          </tr>
+          <tr>
+            <th scope="row">43</th>
+            <td>zip</td>
+            <td>zip -r dept.zip dept</td>
+          </tr>
+          <tr>
+            <th scope="row">44</th>
+            <td>unzip</td>
+            <td>unzip dept.zip</td>
+          </tr>
+          <tr>
+            <th scope="row">45</th>
+            <td>env see environment variable</td>
+            <td>env</td>
+          </tr>
+          <tr>
+            <th scope="row">46</th>
+            <td>$PATH</td>
+            <td>echo $PATH</td>
+          </tr>
+          <tr>
+            <th scope="row">47</th>
+            <td>which</td>
+            <td>which ls</td>
+          </tr>
+          <tr>
+            <th scope="row">48</th>
+            <td>bash_profile</td>
+            <td>nano ~/.bash_profile</td>
+          </tr><tr>
+            <th scope="row">49</th>
+            <td>cat auth.log|grep "error"</td>
+            <td>cat auth.log|grep "error"</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+    <footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    </footer>
+  </body>
+</html>
